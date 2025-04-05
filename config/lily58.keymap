@@ -24,6 +24,11 @@
             key-positions = <52 24>;
             layers = <2>;
         };
+
+        close_win {
+            bindings = <&kp LA(F4)>;
+            key-positions = <50 4>;
+        };
     };
 
     behaviors {
