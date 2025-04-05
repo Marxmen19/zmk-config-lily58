@@ -91,11 +91,11 @@
 
         higher_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &kp AT_SIGN           &kp DOLLAR     &kp HASH               &trans                       &trans       &trans            &trans          &trans             &trans           &trans
+&trans  &trans  &kp LESS_THAN         &kp EQUAL      &kp GREATER_THAN       &kp GRAVE                    &trans       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &trans           &trans
+&trans  &trans  &kp LEFT_PARENTHESIS  &kp MINUS      &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PERCENT  &kp LEFT_BRACE    &kp SEMICOLON   &kp RIGHT_BRACE    &kp EXCLAMATION  &trans
+&trans  &trans  &kp ASTERISK          &kp RS(COLON)  &kp SLASH              &trans     &trans    &trans  &trans       &kp PIPE          &kp TILDE       &kp AMPERSAND      &trans           &trans
+                                      &trans         &trans                 &trans     &trans    &trans  &trans       &trans            &trans
             >;
         };
     };
