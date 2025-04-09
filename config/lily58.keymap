@@ -11,7 +11,7 @@
     combos {
         compatible = "zmk,combos";
 
-        cmb_f12 {
+        combo_f12 {
             bindings = <&kp F12>;
             key-positions = <0 1>;
         };
