@@ -46,6 +46,22 @@
         };
     };
 
+    macros {
+        onec_open: onec_open {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp FSLH &kp FSLH &kp SPACE &kp PLUS &kp PLUS &kp PLUS &kp M &kp UNDER &kp B &kp E &kp L &kp O &kp G &kp L &kp A &kp Z &kp O &kp V &kp SPACE &kp FSLH &kp SPACE &kp SPACE &kp FSLH &kp SPACE>;
+            label = "ONEC_OPEN";
+        };
+
+        onec_close: onec_close {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp FSLH &kp FSLH &kp SPACE &kp MINUS &kp MINUS &kp PLUS &kp M &kp UNDER &kp B &kp E &kp L &kp O &kp G &kp L &kp A &kp Z &kp O &kp V &kp SPACE &kp FSLH &kp SPACE &kp SPACE &kp FSLH &kp SPACE>;
+            label = "ONEC_CLOSE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -70,10 +86,10 @@
 
         lower_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3              &kp F4          &kp F5         &kp F6                                              &kp F7           &kp F8           &kp F9           &kp F10          &kp F11  &kp F12
-&trans  &trans  &kp HOME            &kp UP_ARROW    &kp END        &kp INSERT                                          &kp PAGE_UP      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans   &trans
-&trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER                                           &kp PAGE_DOWN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans   &kp KP_NUMBER_0
-&trans  &trans  &kp LC(LEFT_ARROW)  &trans          &kp RC(RIGHT)  &kp DEL     &kp LC(PAUSE_BREAK)    &kp KP_NUMBER_0  &kp PRINTSCREEN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans   &trans
+&kp F1  &kp F2  &kp F3              &kp F4          &kp F5         &kp F6                                              &kp F7           &kp F8           &kp F9           &kp F10          &kp F11      &kp F12
+&trans  &trans  &kp HOME            &kp UP_ARROW    &kp END        &kp INSERT                                          &kp PAGE_UP      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans       &trans
+&trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER                                           &kp PAGE_DOWN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &onec_open   &kp KP_NUMBER_0
+&trans  &trans  &kp LC(LEFT_ARROW)  &trans          &kp RC(RIGHT)  &kp DEL     &kp LC(PAUSE_BREAK)    &kp KP_NUMBER_0  &kp PRINTSCREEN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &onec_close  &trans
                                     &trans          &trans         &trans      &trans                 &trans           &trans           &kp LCTRL        &kp LEFT_ALT
             >;
         };
