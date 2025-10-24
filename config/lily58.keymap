@@ -86,8 +86,8 @@
 
         lower_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3              &kp F4          &kp F5         &kp F6                                              &kp F7           &kp F8           &kp F9           &kp F10          &kp F11      &kp F12
-&trans  &trans  &kp HOME            &kp UP_ARROW    &kp END        &kp INSERT                                          &kp PAGE_UP      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans       &trans
+&trans  &kp F1  &kp F2              &kp F3          &kp F4         &kp F5                                              &kp F6           &kp F7           &kp F8           &kp F9           &kp F10      &kp F11
+&trans  &trans  &kp HOME            &kp UP_ARROW    &kp END        &kp INSERT                                          &kp PAGE_UP      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans       &kp F12
 &trans  &trans  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT      &kp ENTER                                           &kp PAGE_DOWN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &onec_open   &kp KP_NUMBER_0
 &trans  &trans  &kp LC(LEFT_ARROW)  &trans          &kp RC(RIGHT)  &kp DEL     &kp LC(PAUSE_BREAK)    &kp KP_NUMBER_0  &kp PRINTSCREEN  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &onec_close  &trans
                                     &trans          &trans         &trans      &trans                 &trans           &trans           &kp LCTRL        &kp LEFT_ALT
@@ -97,7 +97,7 @@
         higher_layer {
             bindings = <
 &trans  &kp F1  &kp F2                &kp F3         &kp F4                 &kp F5                       &kp F6       &kp F7            &kp F8          &kp F9             &kp F10          &kp F11
-&trans  &trans  &kp LESS_THAN         &kp EQUAL      &kp GREATER_THAN       &kp GRAVE                    &trans       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &trans           &trans
+&trans  &trans  &kp LESS_THAN         &kp EQUAL      &kp GREATER_THAN       &kp GRAVE                    &trans       &kp LEFT_BRACKET  &kp UNDERSCORE  &kp RIGHT_BRACKET  &trans           &kp F12
 &trans  &trans  &kp LEFT_PARENTHESIS  &kp MINUS      &kp RIGHT_PARENTHESIS  &kp PLUS                     &kp PERCENT  &kp LEFT_BRACE    &kp SEMICOLON   &kp RIGHT_BRACE    &kp EXCLAMATION  &trans
 &trans  &trans  &kp ASTERISK          &kp RS(COLON)  &kp SLASH              &trans     &trans    &trans  &trans       &kp PIPE          &kp TILDE       &kp AMPERSAND      &trans           &trans
                                       &trans         &trans                 &trans     &trans    &trans  &trans       &trans            &trans
