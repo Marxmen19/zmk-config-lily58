@@ -15,6 +15,11 @@
             bindings = <&kp F12>;
             key-positions = <0 1>;
         };
+
+        combo_caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <36 49>;
+        };
     };
 
     behaviors {
