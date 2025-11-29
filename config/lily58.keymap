@@ -17,7 +17,7 @@
         };
 
         combo_caps {
-            bindings = <&kp CAPSLOCK>;
+            bindings = <&caps_word>;
             key-positions = <36 49>;
         };
     };
